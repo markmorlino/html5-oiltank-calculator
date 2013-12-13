@@ -1,0 +1,17 @@
+body {
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+div {
+    width: 320px;
+    height: 60px;
+    background: white;
+}
+.myinput {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	width: 60px;
+	}

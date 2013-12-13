@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html manifest="oil.manifest">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <link rel="apple-touch-icon" href="oil_icon.jpg"/>
+    <link rel="apple-touch-startup-image" href="oil_startup.jpg" />
+    <link rel="stylesheet" href="oil.css" type="text/css" media="screen, mobile" title="main" charset="utf-8">
+    <script type="text/javascript" src="oil.js"></script>
+
+    <title>Oil Tank</title>
+</head>
+<body onLoad="javascript:init();">
+<div>
+<center>
+<form id="tankinfo">
+	<table>
+	<tr>
+		<td align="center">Length</td>
+		<td align="center">Height</td>
+		<td align="center">Width</td>
+		<td align="center">Depth</td>
+	</tr>
+	<tr>
+		<td><input class="myinput" name="length" type="number" size="4" min="0.1" max="60" step="0.1" value="43.3" onChange="javascript:draw();"></td>
+		<td><input class="myinput" name="height" type="number" size="4" min="0.1" max="60" step="0.1" value="45"  onChange="javascript:draw();"></td>
+		<td><input class="myinput" name="width" type="number" size="4" min="0.1" max="60" step="0.1" value="45"  onChange="javascript:draw();"></td>
+		<td><input class="myinput" name="depth" type="number" size="4" min="0.1" max="60" step="0.1" value="7.5"  onChange="javascript:draw();"></td>
+	</tr>
+	</table>
+</form>
+</center>
+</div>
+<canvas id="tank" width="320" height="320"></canvas>
+</body>
+</html>
